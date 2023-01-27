@@ -34,14 +34,14 @@ const ConvertToPath = require(‘svg-convert-to-path’);
 
 ```javascript
 
-var svgTextPath = require('svg-text-to-vector');
+var ConvertToPath = require('svg-convert-to-path');
 
 var options={
-load:'file.svg',
-save:'file-convert.svg'
+loadAs:'file.svg',
+saveAs:'file-convert.svg'
 }	
 
-const convert = await svgTextPath.getPath(options);
+const convert = await ConvertToPath.getPath(options);
 
 ```
 
@@ -135,7 +135,7 @@ Params | &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
 **options.loadAs** | {String - Buffer - Base64 - UTF-8} | Contains SVG object that needs to be converted. Loads from a **Local Directory** or from type **Buffer** - **Base64** - **SVG String**
 **options.saveAs** | {String} | Returns the convert to path SVG object. Saves to a **Local Directory** or returns type **Buffer** - **Base64** - **SVG String**
 **options.font** | {String} | **Optional** - Param for default font. Applicable if unable to find the relevant font. Default is **Times New Roman**
-**options.fontPath** | {String} | **Optional** - Param for default font path. Applicable if unable to find relevant fonts and **options.font** param is defined. Default is **svg-text-to-vector/config/fonts/times.ttf**
+**options.fontPath** | {String} | **Optional** - Param for default font path. Applicable if unable to find relevant fonts and **options.font** param is defined. Default is **svg-convert-to-path/config/fonts/times.ttf**
 **options.fontSize** | {Number} | **Optional** - Param for default font size. Applicable if no font size is defined within SVG text tag. Default is **16**
 
 # Performance & Compatibility
