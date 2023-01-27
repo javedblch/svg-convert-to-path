@@ -7,7 +7,7 @@
 
 ## Features:
 
-**- Supported Tags:** ‘text | tspan | rect | circle | ellipse | line | polyline | polygon’.
+**- Supported Tags:** 'text | tspan | rect | circle | ellipse | line | polyline | polygon’.
 
 **- Attributes:** Supports all major attributes including  x, y, dx, dy, opacity, stroke, transform, class-based styling etc.
 
@@ -21,13 +21,13 @@
 
 **- Multilingual Font Handling:** In order for all Languages and Unicode characters to render correctly, you simply need to download **Arial Unicode MS** font and save it to **svg-convert-to-path/config/fonts** location as **arial-unicode-ms.ttf**. You can [click here](https://www.fonts100.com/5092/arial_unicode_ms.zip) to download. 
 
-**- Built-in Common Fonts:** ‘Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS’.
+**- Built-in Common Fonts:** 'Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS’.
 
 
 ## Usage
 
 ```bash
-const ConvertToPath = require(‘svg-convert-to-path’);
+const ConvertToPath = require('svg-convert-to-path’);
 ```
 
 ### Load | Save as Files
@@ -49,12 +49,12 @@ const convert = await ConvertToPath.getPath(options);
 
 ```javascript
 
-var svg = fs.readFileSync(‘./public/file.svg’);
+var svg = fs.readFileSync('./public/file.svg’);
 svg=Buffer.from(svg);
 
 var options={
 loadAs:svg,
-saveAs:‘buffer’
+saveAs:'buffer’
 }
 
 const convert = await ConvertToPath.getPath(options);
@@ -65,11 +65,11 @@ const convert = await ConvertToPath.getPath(options);
 
 ```javascript
 
-var svg = fs.readFileSync(‘./public/file.svg’,’base64’);
+var svg = fs.readFileSync('./public/file.svg’,’base64’);
 
 var options={
 loadAs:svg,
-saveAs:‘base64’
+saveAs:'base64’
 }
 
 const convert = await ConvertToPath.getPath(options);
@@ -80,11 +80,11 @@ const convert = await ConvertToPath.getPath(options);
 
 ```javascript
 
-var svg = fs.readFileSync(‘./public/file.svg’,{encoding:‘utf8’});
+var svg = fs.readFileSync('./public/file.svg’,{encoding:'utf8’});
 
 var options={
 loadAs:svg,
-saveAs:‘utf8’ | ‘utf-8’
+saveAs:'utf8’ | 'utf-8’
 }
 
 const convert = await ConvertToPath.getPath(options);
