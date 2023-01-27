@@ -154,6 +154,9 @@ Purchase includes one month of technical support in case of any foreseeable bugs
 # Upgrade
 For major additions & upgrade, the creator of this package can be contacted any time at javedblch@gmail.com or via [LinkedIn](https://www.linkedin.com/in/javed-baloch-672a5013/).
 
+# How to Buy!
+[Click Here](https://app.privjs.com/buy/packageDetail?pkg=svg-convert-to-path) to buy now!
+
 # License
 
 MIT
