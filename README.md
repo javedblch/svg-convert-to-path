@@ -21,12 +21,6 @@
 
 **- Built-in Common Fonts:** ‘Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS’.
 
-**- Source Code:** The code base contains zero minification and is easy to understand and fully customizable.
-
-**- Technical Support:** Purchase includes one month of technical support in case of any foreseeable bugs or adjustments in the code flow or features.
-
-**- Upgrade:** For major additions & upgrade, the creator of this package can be contacted any time at javedblch@gmail.com or via [LinkedIn](https://www.linkedin.com/in/javed-baloch-672a5013/).
-
 
 ## Installation
 
