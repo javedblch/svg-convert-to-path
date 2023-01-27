@@ -1,2 +1,165 @@
-# svg-convert-to-path
-Svg Convert to Path performs runtime shapes &amp; text to path conversion of complex SVG files
+# SVG Convert to Path
+
+> ### Performs runtime shapes & text to path conversion of complex SVG files with just a few lines of code.
+
+
+## Features:
+
+**- Supported Tags:** ‘text | tspan | rect | circle | ellipse | line | polyline | polygon’.
+
+**- Attributes:** Supports all major attributes including  x, y, dx, dy, opacity, stroke, transform, class-based styling etc.
+
+**- Colors:** Supports Solid Fill, Linear and Radial Gradients.
+
+**- Multilingual Support:** Supports all Languages & Unicode characters.
+
+**- Dynamic Font Handling:** Offers dynamic runtime addition of fonts to its native config/fonts.json file. 
+
+**- Google Fonts:** In case of a missing font, the code will search for the required font from [Google Fonts Github](https://github.com/google/fonts). On failure, applies font from default settings. You may change the default font & font size settings from the source code files.
+
+**- Multilingual Font Handling:** Includes built-in font handling for Non-English and Unicode characaters.
+
+**- Built-in Common Fonts:** ‘Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS’.
+
+**- Source Code:** The code base contains zero minification and is easy to understand and fully customizable.
+
+**- Technical Support:** Purchase includes one month of technical support in case of any foreseeable bugs or adjustments in the code flow or features.
+
+**- Upgrade:** For major additions & upgrade, the creator of this package can be contacted any time at javedblch@gmail.com or via [LinkedIn](https://www.linkedin.com/in/javed-baloch-672a5013/).
+
+
+## Installation
+
+```bash
+npm install —save svg-convert-to-path
+```
+
+## Usage
+
+```bash
+const ConvertToPath = require(‘svg-convert-to-path’);
+```
+
+### Load | Save as Files
+
+```javascript
+
+var svgTextPath = require('svg-text-to-vector');
+
+var options={
+load:'file.svg',
+save:'file-convert.svg'
+}	
+
+const convert = await svgTextPath.getPath(options);
+
+```
+
+### Load | Save as Buffer
+
+```javascript
+
+var svg = fs.readFileSync(‘./public/file.svg’);
+svg=Buffer.from(svg);
+
+var options={
+loadAs:svg,
+saveAs:‘buffer’
+}
+
+const convert = await ConvertToPath.getPath(options);
+
+```
+
+### Load | Save as Base64
+
+```javascript
+
+var svg = fs.readFileSync(‘./public/file.svg’,’base64’);
+
+var options={
+loadAs:svg,
+saveAs:‘base64’
+}
+
+const convert = await ConvertToPath.getPath(options);
+
+```
+
+### Load | Save as SVG String (utf-8)
+
+```javascript
+
+var svg = fs.readFileSync(‘./public/file.svg’,{encoding:‘utf8’});
+
+var options={
+loadAs:svg,
+saveAs:‘utf8’ | ‘utf-8’
+}
+
+const convert = await ConvertToPath.getPath(options);
+
+```
+## Fonts Handling
+
+- All dynamically added & built-in font names & paths load from **svg-convert-to-path/config/fonts.json** file
+
+### Dynamically Add Fonts
+
+- Dynamically add fonts with json key & value pair {“name”, “path”}. Each font needs to be added one time only for all future purposes.
+
+```javascript
+var font={"name":"Lexend Tera","path": "/lexend_tera.ttf"};
+
+const addFonts = await ConvertToPath.push(font);
+
+```
+
+### Add Fonts Manually
+
+- Open **svg-convert-to-path/config/fonts.json** and simply add more fonts.
+
+```javascript
+
+{
+   "font":[
+      {
+         "name":"Times New Roman",
+         "path":"./public/fonts/times.ttf"
+      },
+      {
+         "name":"Anton",
+         "path":"./public/fonts/anton.ttf"
+      }	  
+   ]
+}
+
+```
+## API
+
+## Options
+
+
+Params | &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  Data Type &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  | Description
+--- | --- | ---
+**options.loadAs** | {String - Buffer - Base64 - UTF-8} | Contains SVG object that needs to be converted. Loads from a **Local Directory** or from type **Buffer** - **Base64** - **SVG String**
+**options.saveAs** | {String} | Returns the convert to path SVG object. Saves to a **Local Directory** or returns type **Buffer** - **Base64** - **SVG String**
+**options.font** | {String} | **Optional** - Param for default font. Applicable if unable to find the relevant font. Default is **Times New Roman**
+**options.fontPath** | {String} | **Optional** - Param for default font path. Applicable if unable to find relevant fonts and **options.font** param is defined. Default is **svg-text-to-vector/config/fonts/times.ttf**
+**options.fontSize** | {Number} | **Optional** - Param for default font size. Applicable if no font size is defined within SVG text tag. Default is **16**
+
+# Performance & Compatibility
+The package ensures fast and efficient performance and is fully compatible with all the popular Node.js frameworks.
+
+# Source Code
+The code base contains zero minification and is easy to understand and fully customizable.
+
+# Technical Support
+Purchase includes one month of technical support in case of any foreseeable bugs or adjustments in the code flow or features.
+
+# Upgrade
+For major additions & upgrade, the creator of this package can be contacted any time at javedblch@gmail.com or via [LinkedIn](https://www.linkedin.com/in/javed-baloch-672a5013/).
+
+# License
+
+MIT
