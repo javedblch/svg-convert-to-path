@@ -3,7 +3,7 @@
 > ### Performs runtime shapes & text to path conversion of complex SVG files with just a few lines of code.
 
 # How to Buy?
-[Click Here](https://app.privjs.com/buy/packageDetail?pkg=svg-convert-to-path) to buy now!
+[Click here](https://app.privjs.com/buy/packageDetail?pkg=svg-convert-to-path) to buy now!
 
 ## Features:
 
