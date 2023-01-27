@@ -22,12 +22,6 @@
 **- Built-in Common Fonts:** ‘Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS’.
 
 
-## Installation
-
-```bash
-npm install —save svg-convert-to-path
-```
-
 ## Usage
 
 ```bash
