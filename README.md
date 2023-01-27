@@ -17,7 +17,7 @@
 
 **- Google Fonts:** In case of a missing font, the code will search for the required font from [Google Fonts Github](https://github.com/google/fonts). On failure, applies font from default settings. You may change the default font & font size settings from the source code files.
 
-**- Multilingual Font Handling:** Includes built-in font handling for Non-English and Unicode characaters.
+**- Multilingual Font Handling:** In order for all Languages and Unicode characters to render correctly, you simply need to download **Arial Unicode MS** font and save it to **svg-convert-to-path/config/fonts** location as **arial-unicode-ms.ttf**. You can [click here](https://www.fonts100.com/5092/arial_unicode_ms.zip) to download. 
 
 **- Built-in Common Fonts:** ‘Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS’.
 
