@@ -1,6 +1,6 @@
 # SVG Convert to Path
 
-> ### Performs runtime shapes & text to path conversion of complex SVG files with just a few lines of code.
+> ### Performs runtime shapes & text to path conversion of complex SVG files.
 
 ## Features:
 
