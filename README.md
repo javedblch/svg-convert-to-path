@@ -2,9 +2,6 @@
 
 > ### Performs runtime shapes & text to path conversion of complex SVG files with just a few lines of code.
 
-# How to Buy?
-[Click here](https://app.privjs.com/buy/packageDetail?pkg=svg-convert-to-path) to buy now!
-
 ## Features:
 
 **- Supported Tags:** 'text | tspan | rect | circle | ellipse | line | polyline | polygon’.
@@ -140,12 +137,6 @@ Params | &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
 
 # Performance & Compatibility
 The package ensures fast and efficient performance and is fully compatible with all the popular Node.js frameworks.
-
-# Source Code
-The code base contains zero minification and is easy to understand and fully customizable.
-
-# Technical Support
-Purchase includes one month of technical support in case of any foreseeable bugs or adjustments in the code flow or features.
 
 # Upgrade
 For major additions & upgrade, the creator of this package can be contacted any time at javedblch@gmail.com or via [LinkedIn](https://www.linkedin.com/in/javed-baloch-672a5013/).
