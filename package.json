@@ -1,6 +1,5 @@
 {
   "name": "svg-convert-to-path",
-  "homepage": "https://github.com/javedblch/svg-convert-to-path#readme",
   "description": "Performs runtime shapes & text to path conversion of complex SVG files with just a few lines of code.",
   "version": "5.2.0",
   "license": "MIT",
@@ -25,8 +24,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/javedblch/svg-convert-to-path"
-  },
-  "publishConfig": {
-    "registry": "https://r.privjs.com"
   }
 }
