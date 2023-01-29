@@ -1,6 +1,6 @@
 {
   "name": "svg-convert-to-path",
-  "description": "Performs runtime shapes & text to path conversion of complex SVG files with just a few lines of code.",
+  "description": "Performs runtime shapes & text to path conversion of complex SVG.",
   "version": "5.2.0",
   "license": "MIT",
   "main": "index.js",
