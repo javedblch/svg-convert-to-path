@@ -1,0 +1,11 @@
+{"font":[
+{"name":"Helvetica","path":"svg-convert-to-path/config/fonts/helvetica.ttf", "type":"default"},
+{"name":"Arial","path":"svg-convert-to-path/config/fonts/arial.ttf", "type":"default"},
+{"name":"Verdana","path":"svg-convert-to-path/config/fonts/verdana.ttf", "type":"default"},
+{"name":"Tahoma","path":"svg-convert-to-path/config/fonts/tahoma.ttf", "type":"default"},
+{"name":"Trebuchet MS","path":"svg-convert-to-path/config/fonts/trebuchet_ms.ttf", "type":"default"},
+{"name":"Impact","path":"svg-convert-to-path/config/fonts/impact.ttf", "type":"default"},
+{"name":"Times New Roman","path":"svg-convert-to-path/config/fonts/times.ttf", "type":"default"},
+{"name":"Courier","path":"svg-convert-to-path/config/fonts/courier.ttf", "type":"default"},
+{"name":"Comic Sans MS","path":"svg-convert-to-path/config/fonts/comic_sans_ms.ttf", "type":"default"}
+]}
