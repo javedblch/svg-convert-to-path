@@ -2,36 +2,21 @@
 
 > ### Performs runtime shapes & text to path conversion of complex SVG files.
 
-## Features:
+## Installation
 
-**- Supported Tags:** 'text | tspan | rect | circle | ellipse | line | polyline | polygon’.
-
-**- Attributes:** Supports all major attributes including  x, y, dx, dy, opacity, stroke, transform, class-based styling etc.
-
-**- Colors:** Supports Solid Fill, Linear and Radial Gradients.
-
-**- Multilingual Support:** Supports all Languages & Unicode characters.
-
-**- Dynamic Font Handling:** Offers dynamic runtime addition of fonts to its native config/fonts.json file. 
-
-**- Google Fonts:** In case of a missing font, the code will search for the required font from [Google Fonts Github](https://github.com/google/fonts). On failure, applies font from default settings. You may change the default font & font size settings from the source code files.
-
-**- Multilingual Font Handling:** In order for all Languages and Unicode characters to render correctly, you simply need to download **Arial Unicode MS** font and save it to **svg-convert-to-path/config/fonts** location as **arial-unicode-ms.ttf**. You can [click here](https://www.fonts100.com/5092/arial_unicode_ms.zip) to download. 
-
-**- Built-in Common Fonts:** 'Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS’.
-
+```bash
+npm install --save svg-convert-to-path
+```
 
 ## Usage
 
 ```bash
-const ConvertToPath = require('svg-convert-to-path’);
+const ConvertToPath = require('svg-convert-to-path');
 ```
 
 ### Load | Save as Files
 
 ```javascript
-
-var ConvertToPath = require('svg-convert-to-path');
 
 var options={
 loadAs:'file.svg',
@@ -46,12 +31,12 @@ const convert = await ConvertToPath.getPath(options);
 
 ```javascript
 
-var svg = fs.readFileSync('./public/file.svg’);
+var svg = fs.readFileSync('./public/file.svg');
 svg=Buffer.from(svg);
 
 var options={
 loadAs:svg,
-saveAs:'buffer’
+saveAs:'buffer'
 }
 
 const convert = await ConvertToPath.getPath(options);
@@ -62,11 +47,11 @@ const convert = await ConvertToPath.getPath(options);
 
 ```javascript
 
-var svg = fs.readFileSync('./public/file.svg’,’base64’);
+var svg = fs.readFileSync('./public/file.svg','base64');
 
 var options={
 loadAs:svg,
-saveAs:'base64’
+saveAs:'base64'
 }
 
 const convert = await ConvertToPath.getPath(options);
@@ -77,11 +62,11 @@ const convert = await ConvertToPath.getPath(options);
 
 ```javascript
 
-var svg = fs.readFileSync('./public/file.svg’,{encoding:'utf8’});
+var svg = fs.readFileSync('./public/file.svg',{encoding:'utf8'});
 
 var options={
 loadAs:svg,
-saveAs:'utf8’ | 'utf-8’
+saveAs:'utf8' | 'utf-8'
 }
 
 const convert = await ConvertToPath.getPath(options);
@@ -89,11 +74,11 @@ const convert = await ConvertToPath.getPath(options);
 ```
 ## Fonts Handling
 
-- All dynamically added & built-in font names & paths load from **svg-convert-to-path/config/fonts.json** file
+All dynamically added & built-in fonts load from **svg-convert-to-path/config/fonts.json** file
 
 ### Dynamically Add Fonts
 
-- Dynamically add fonts with json key & value pair {“name”, “path”}. Each font needs to be added one time only for all future purposes.
+Dynamically add fonts with json key & value pair {"name", "path"}. Each font needs to be added one time only for all future purposes.
 
 ```javascript
 var font={"name":"Lexend Tera","path": "/lexend_tera.ttf"};
@@ -104,7 +89,7 @@ const addFonts = await ConvertToPath.push(font);
 
 ### Add Fonts Manually
 
-- Open **svg-convert-to-path/config/fonts.json** and simply add more fonts.
+Open **svg-convert-to-path/config/fonts.json** and simply add more fonts.
 
 ```javascript
 
@@ -122,7 +107,28 @@ const addFonts = await ConvertToPath.push(font);
 }
 
 ```
-## API
+
+## Supported Tags
+'text | tspan | rect | circle | ellipse | line | polyline | polygon'
+
+## Attributes
+Supports all major attributes including  x, y, dx, dy, opacity, stroke, transform, class-based styling etc. Supports Solid Fill, Linear and Radial Gradients.
+
+## Multilingual Font Handling
+
+Supports all Languages & Unicode characters. The package will auto detect Multilingual & Unicode characters in the svg file. 
+
+To make Multilingual work, download **Arial Unicode MS** font and save it to **svg-convert-to-path/config/fonts** location as **arial-unicode-ms.ttf**. You can [click here](https://www.fonts100.com/5092/arial_unicode_ms.zip) to download.
+
+## Google Fonts Handling
+
+In case of a missing font, the code will search for the required font from [Google Fonts Github](https://github.com/google/fonts). 
+
+On failure, loads font from default settings. You may change the default font settings using the **font**, **fontPath** and **fontSize** params.
+
+## Built-in Common Fonts
+
+'Helvetica | Arial | Verdana | Tahoma | Trebuchet MS | Impact | Times New Roman | Courier | Comic Sans MS'
 
 ## Options
 
@@ -139,7 +145,7 @@ Params | &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
 The package ensures fast and efficient performance and is fully compatible with all the popular Node.js frameworks.
 
 # Upgrade
-For major additions & upgrade, the creator of this package can be contacted any time at javedblch@gmail.com or via [LinkedIn](https://www.linkedin.com/in/javed-baloch-672a5013/).
+For additions & upgrades, the creator of this package can be contacted any time at javedblch@gmail.com or via [LinkedIn](https://www.linkedin.com/in/javed-baloch-672a5013/).
 
 # License
 
